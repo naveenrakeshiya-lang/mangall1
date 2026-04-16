@@ -270,7 +270,9 @@ function renderText(val=""){
     }
   }
   document.getElementById("text").innerHTML=html;
-}
+} 
+  let textBox = document.getElementById("text");
+textBox.scrollTop = textBox.scrollHeight;
 renderText();
 
 // ===== VAR =====
