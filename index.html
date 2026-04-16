@@ -269,10 +269,11 @@ function renderText(val=""){
       html += c===" "?"&nbsp;":c;
     }
   }
-  document.getElementById("text").innerHTML=html;
-} 
   let textBox = document.getElementById("text");
-textBox.scrollTop = textBox.scrollHeight;
+  textBox.innerHTML = html;
+  textBox.scrollTop = textBox.scrollHeight;
+} 
+ 
 renderText();
 
 // ===== VAR =====
